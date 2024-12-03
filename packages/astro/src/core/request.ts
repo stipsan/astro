@@ -62,6 +62,10 @@ export function createRequest({
 		url.search = '';
 	}
 
+	console.log({
+		isPrerendered, body,
+	});
+
 	const request = new Request(url, {
 		method: method,
 		headers: headersObj,
